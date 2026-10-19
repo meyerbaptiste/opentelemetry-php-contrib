@@ -62,13 +62,13 @@ services:
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
 
   mongodb:
-    image: mongo:8.3.8@sha256:5211c51171f57ae60842b11664bb244628971b3d35325762a97888337b9bb0db
+    image: mongo:8.3.13@sha256:0e900a3364da37b76d642b73b0bba56bd4c6c509ab470cf700436fd866bee3ff
     hostname: mongodb
     ports:
       - "27017:27017/tcp"
 
   mysql:
-    image: mysql:8.4.11@sha256:b3b90af2a6552ae30c266fdb7d5dd55f3afb72404bb78d37fe8a23eb857fd3fb
+    image: mysql:8.4.11@sha256:24989179f58856db763f418010c1169fecc944e3ec1ea7e921572d83eb070f70
     hostname: mysql
     ports:
       - "3306:3306/tcp"
@@ -86,7 +86,7 @@ services:
       - ./docker/mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
 
   postgresql:
-    image: postgres:17.11@sha256:67f41722b7a8cbdb868a44a4995c846eddfdc2973bccb291ce937dce88ad5675
+    image: postgres:17.11@sha256:2d2b8998d31037bf721cfdf764d76ba74171b4fab3431b7f72c27c56ddbdf9e3
     hostname: postgresql
     ports:
       - "5432:5432/tcp"

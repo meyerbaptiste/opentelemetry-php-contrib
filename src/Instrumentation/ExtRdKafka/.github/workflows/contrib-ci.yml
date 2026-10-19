@@ -7,6 +7,6 @@ permissions:
 
 jobs:
   CI:
-    uses: open-telemetry/opentelemetry-php-contrib/.github/workflows/instrumentation-ext-rdkafka.yml@c8d47c130fdda58dcc06baa3d3a822b8060b99a5 # main
+    uses: open-telemetry/opentelemetry-php-contrib/.github/workflows/instrumentation-ext-rdkafka.yml@f0a7c730f4eb93f5d1527584018274fdfbb17a4a # main
     with:
       package-root: '.'
